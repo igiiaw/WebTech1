@@ -1,83 +1,81 @@
 <!DOCTYPE html>
-<html>
+<html> 
   <head>
-    <style>
-      table, th, td {
-    border: 1px solid black;
-    border-collapse: collapse;
-  }
-    </style>
     <meta charset="utf-8">
     <meta name="viewport" content="width = device-width, initial-scale=1">
-    <link rel="stylesheet" href="css/styles.css">
-    <title> My First Practice Page </title>
+    <link rel="stylesheet" href="C:\WebTech1\fcss\styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=SUSE+Mono:ital,wght@0,100..800;1,100..800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&family=Rubik:ital,wght@0,300..900;1,300..900&family=SUSE+Mono:ital,wght@0,100..800;1,100..800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Iceland&family=Noto+Sans+JP:wght@100..900&family=Rubik:ital,wght@0,300..900;1,300..900&family=SUSE+Mono:ital,wght@0,100..800;1,100..800&display=swap" rel="stylesheet">
+    <title>Main</title>
   </head>
   <body>
-    <h1>Amantay Zhan</h1>
-    <h2>Web Technologies Frontend</h2>
-    <h3>About Me</h3>
-    <p>Im 18yo. I like to play video games and go to the gym.</p>
-    <ol>
-      <li>Video Games</li>
-      <li>GYM</li>
-      <li>Cooking</li>
-    </ol>
-    <ul>
-      <li><a href="https://www.youtube.com">YouTube</a></li>
-      <li>Instagram</li>
-      <li><a href="https://www.faceit.com/ru/players/igiiaw/stats/cs2">FACEIT</a></li>
-    </ul>
+    <header class="header-style">
+      <nav id="navbar">
+        <a href="C:\WebTech1\fhtml\index.html" class="nav-link">Main</a>
+        <a href="C:\WebTech1\fhtml\About me.html" class="nav-link">About Me</a>
+        <a href="" class="nav-link">Contacts</a>
+      </nav>
+    </header>
     <br>
-    <img src="/WebTech1/img/MileMoralll.jpg" alt="-_-" width="100px" height="100px">
     <br>
-    <button><a href="https://intothespiderverse.fandom.com/wiki/Miles_Morales_(Earth-1610)">Click me!</a></button>
-    <br>
-    <table>
-        <tr>
+      <div class="main-box">
+      <a href="C:\WebTech1\fhtml\index.html"><img src="/WebTech1/img/MileMoralll.jpg" alt="-_-" id="main-image"></a>
+      <br>
+      <button>Click me!</button>
+      <br>
+      <br>
+      <div class="table-font">
+        <table>
+          <tr>
             <th>Subject</th>
             <th>Day</th>
             <th>Time</th>
-        </tr>
-        <tr>
+          </tr>
+          <tr>
             <td>Web</td>
             <td>Mon</td>
             <td>14:00-16:00</td>
-        </tr>
-        <tr>
+          </tr>
+          <tr>
             <td>OS</td>
             <td>Tue</td>
             <td>13:00-14:00</td>
-        </tr>
-        <tr>
+          </tr>
+          <tr>
             <td>FL</td>
             <td>Fri</td>
             <td>11:00-12:00</td>
-        </tr>
-    </table>
-    <br>
-    <table>
-        <tr>
-            <td>Menu</td>
-            <td>Main content</td>
-        </tr>
-        <tr>
-          <td>Main</td>
-          <td>Welcome! This is where the main text of the page will be.</td>
-        </tr>
-        <tr>
-          <td>About us</td>
-          <td>Here you can post news, articles or photos.</td>
-        </tr>
-    </table>
-    <p style="font-size:30px;">My mood today: &#128514; &#128522; &#128517;</p>
-    <form>
-      <label for="Fname">Full Name</label>
-      <input type="text" id="Fname"><br>
-      <label for="Email">Email</label>
-      <input type="email" id="Email"><br>
-      <label for="Fcolor">Favorite Color</label>
-      <input type="color" id="Fcolor"><br>
-      <button>Submit</button>
-    </form>
+          </tr>
+        </table>
+        <br>
+        <table>
+          <tr>
+            <th>Menu</th>
+            <th>Main content</th>
+          </tr>
+          <tr>
+            <td>Main</td>
+            <td>Welcome! This is where the main text of the page will be.</td>
+          </tr>
+          <tr>
+            <td>About us</td>
+            <td>Here you can post news, articles or photos.</td>
+          </tr>
+        </table>
+      </div>
+      <br>
+      <form>
+        <label for="Fname">Full Name:</label>
+        <input type="text" id="Fname"><br>
+        <label for="Email">Email:</label>
+        <input type="email" id="Email"><br>
+        <label for="Fcolor">Favorite Color:</label>
+        <input type="color" id="Fcolor">
+        <br>
+        <br>
+        <button>Submit</button>
+      </form>
+    </div>
   </body>
 </html>

@@ -1,0 +1,85 @@
+body{
+    background-image: url(/WebTech1/img/MilesMoralesWallpaperBackgr.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
+label{
+  display: block;
+  margin-bottom: 5px;
+}
+input[type="text"], input[type="email"], input[type="color"] {
+  width: 30%;
+  padding: 5px;
+  margin-bottom: 10px;
+  border: 1px solid #ffffff;
+  border-radius: 5px;
+  font-size: 15px;
+  box-sizing: border-box;
+  transition: 0.3s;
+  background-color: rgb(127, 1, 1);
+}
+button{
+  background-color: rgb(127, 1, 1);
+  border: 1px solid white;
+  color: white;
+}
+table, th, td {
+    border: 5px solid rgb(127, 1, 1);
+    border-collapse: collapse;
+  }
+  .table-font{
+    font-family: "iceland";
+  }
+  .list-font{
+    font-family: "SUSE Mono";
+  }
+  .start-of{
+    font-family: "Rubik";
+    font-weight: bold;
+  }
+  .link-in-box{
+    text-decoration: none;
+    color: rgb(127, 1, 1);
+  }
+  .link-in-box:hover{
+    color: rgb(179, 32, 32);
+    transition: 1s;
+    text-decoration: underline;
+  }
+  .main-box{
+    background-color: rgb(28, 27, 40);
+    padding: 20px;
+    margin: auto;
+    width: 60%;
+    color: white;
+  }
+  #main-image{
+    width: 100px;
+    height: 100px;
+  }
+  #navbar{
+    font-family: "Rubik";
+    font-weight: bold;
+    background-color: rgb(127, 1, 1);
+    height: 40px;
+    text-align: right;
+    background-size: cover;
+  }
+  .nav-link{
+    text-decoration: none;
+    color: white;
+    padding: 20px;
+  }
+  .nav-link:hover{
+    color: rgb(247, 241, 232);
+    transition: 1s;
+    text-decoration: underline;
+  }
+  .header-style{
+    top: 0px;
+    background-color: rgb(127, 1, 1);
+    height: 40px;
+  }
+  
