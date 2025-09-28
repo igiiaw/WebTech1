@@ -4,10 +4,13 @@ body{
     background-attachment: fixed;
     background-position: center;
     background-size: cover;
+    margin: 0px;
 }
-label{
-  display: block;
-  margin-bottom: 5px;
+.page-name{
+  color: white;
+  text-align: center;
+  font-family: "Rubik";
+  font-weight: bold;
 }
 input[type="text"], input[type="email"], input[type="color"] {
   width: 30%;
@@ -21,6 +24,10 @@ input[type="text"], input[type="email"], input[type="color"] {
   background-color: rgb(127, 1, 1);
   color: white;
 }
+label{
+  display: block;
+  margin-bottom: 5px;
+}
 button{
   background-color: rgb(127, 1, 1);
   border: 1px solid white;
@@ -29,58 +36,295 @@ button{
 table, th, td {
     border: 5px solid rgb(127, 1, 1);
     border-collapse: collapse;
-  }
-  .table-font{
+}
+.table-font{
     font-family: "iceland";
-  }
-  .list-font{
+}
+.list-font{
     font-family: "SUSE Mono";
-  }
-  .start-of{
+}
+.start-of{
     font-family: "Rubik";
     font-weight: bold;
-  }
-  .link-in-box{
+}
+.link-in-box{
     text-decoration: none;
     color: rgb(127, 1, 1);
-  }
-  .link-in-box:hover{
+}
+.link-in-box:hover{
     color: rgb(179, 32, 32);
     transition: 1s;
     text-decoration: underline;
-  }
-  .main-box{
+}
+.main-box{
     background-color: rgb(28, 27, 40);
     padding: 20px;
+    padding-top: 10px;
     margin: auto;
     width: 60%;
     color: white;
-  }
-  #main-image{
+}
+#main-image{
     width: 100px;
     height: 100px;
-  }
-  #navbar{
+}
+header{
+    font-family: "Rubik";
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+    color: white;
+    background-color: rgb(127, 1, 1);
+    padding-right: 20px;
+}
+.header-logo{
+    width: 75px;
+    height: auto;
+    display: block;
+}
+  /*#navbar{
     font-family: "Rubik";
     font-weight: bold;
     background-color: rgb(127, 1, 1);
     height: 40px;
     text-align: right;
     background-size: cover;
-  }
-  .nav-link{
-    text-decoration: none;
+    padding-top: 20px;
+  }*/
+.nav-ul{
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+nav a{
+    display: flex;
     color: white;
-    padding: 20px;
-  }
-  .nav-link:hover{
+    text-decoration: none;
+}
+nav a:hover{
     color: rgb(247, 241, 232);
     transition: 1s;
     text-decoration: underline;
-  }
-  .header-style{
-    top: 0px;
-    background-color: rgb(127, 1, 1);
-    height: 40px;
-  }
-  
+}
+.card-in-row{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 40px;
+    padding: 20px;
+}
+.card-img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  display: block;
+  border: 1px solid white;
+  border-radius: 4px;
+}
+.card1{
+    flex: 300px;
+    background-color: rgb(1, 6, 31);
+    border-radius: 7px;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    border: 1px solid rgb(127, 1, 1);
+    border-collapse: collapse;
+    padding: 10px;
+    font-family: "iceland";
+    font-weight: bold;
+}
+.card1 a{
+    color: white;
+    text-decoration: none;
+}
+.card1 a:hover{
+    text-decoration: underline;
+    transition: 1s;
+}
+.card2{
+    flex: 300px;
+    background-color: rgb(1, 6, 31);
+    border-radius: 7px;
+    display: flex;
+    flex-direction: column;
+    color: rgb(2, 168, 194);
+    border: 1px solid rgb(179, 3, 164);
+    border-collapse: collapse;
+    padding: 10px;
+    font-family: "iceland";
+    font-weight: bold;
+}
+.card2 a{
+    color: rgb(2, 168, 194);
+    text-decoration: none;
+}
+.card2 a:hover{
+    text-decoration: underline;
+    transition: 1s;
+}
+.card3{
+    flex: 300px;
+    background-color: rgb(11, 0, 47);
+    border-radius: 7px;
+    display: flex;
+    flex-direction: column;
+    color: rgb(208, 2, 2);
+    border: 1px solid rgb(41, 0, 204);
+    border-collapse: collapse;
+    padding: 10px;
+    font-family: "iceland";
+    font-weight: bold;
+}
+.card3 a{
+    color: rgb(208, 2, 2);
+    text-decoration: none;
+}
+.card3 a:hover{
+    text-decoration: underline;
+    transition: 1s;
+}
+
+/*Grid*/
+.grid-layout {
+  display: grid;
+  grid-template-columns: 200px 1fr;
+  grid-template-rows: 60px 1fr 50px;
+  grid-template-areas:
+    "header header"
+    "sidebar main"
+    "footer footer";
+  height: 100vh;
+}
+.grid-layout header {
+  grid-area: header;
+  background: rgb(127, 1, 1);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.grid-layout aside {
+  grid-area: sidebar;
+  background: #1c1c2a;
+  color: white;
+  padding: 20px;
+}
+.grid-layout main {
+  grid-area: main;
+  background: white;
+  padding: 20px;
+  color: black;
+}
+.grid-layout footer {
+  grid-area: footer;
+  background: rgb(127, 1, 1);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/*gallery*/
+.span-gallery{
+  width: 200px;
+  display: block;
+  margin: auto;
+}
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  padding: 20px;
+}
+
+.img-box {
+  position: relative;
+  overflow: hidden;
+}
+
+.img-box img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  display: block;
+  border-radius: 6px;
+  margin: auto;
+}
+
+.img-box span {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0,0,0,0.6);
+  color: white;
+  padding: 5px;
+  text-align: center;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.img-box:hover span {
+  opacity: 1;
+}
+
+
+/*portfolio*/
+.portfolio-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgb(127, 1, 1);
+  padding: 10px 20px;
+  color: white;
+}
+.portfolio-header .logo {
+  font-weight: bold;
+  font-size: 20px;
+}
+.portfolio-main {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 20px;
+  padding: 20px;
+}
+.project-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background: #1c1c2a;
+  color: white;
+  border: 1px solid rgb(127, 1, 1);
+  border-radius: 8px;
+  padding: 15px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+.project-card button {
+  margin-top: 10px;
+  padding: 8px;
+  background: rgb(127, 1, 1);
+  border: none;
+  color: white;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+}
+.portfolio-info {
+  background: #f4f4f4;
+  padding: 15px;
+  border-radius: 8px;
+}
+.portfolio-footer {
+  grid-column: 1 / -1;
+  background: rgb(127, 1, 1);
+  color: white;
+  text-align: center;
+  padding: 10px;
+  margin-top: 20px;
+}
