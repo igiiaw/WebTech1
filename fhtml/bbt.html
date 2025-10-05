@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Responsive Web Design Assignment</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="../fcss/style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;700&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <!--header-->
+        <header>
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark-custom">
+                <div class="container">
+                    <a class="navbar-brand fw-bold text-white" href="#">MyPortfolio</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                        <ul class="navbar-nav">
+                            <li class="nav-item"><a class="nav-link active" href="#typography">Typography</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#boxes">Boxes</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#grid">Grid</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <main class="container my-5">
+            <!--task 0-->
+            <section id="typography" class="mb-5 text-center">
+                <h1>Welcome to My Page</h1>
+                <p>I am just testing how fonts change on different screens. Also, I really like dark mode designs.</p>
+            </section>
+            <!--task 1-->
+            <section id="boxes" class="mb-5 text-center">
+                <h2 class="section-title mb-4">My hobbies</h2>
+                <div class="boxes">
+                    <div class="box">Video Games</div>
+                    <div class="box">GYM</div>
+                    <div class="box">Cooking</div>
+                </div>
+            </section>
+            <!--task 2-->
+            <section id="grid" class="mb-5 text-center">
+                <h2 class="section-title mb-4">My faivourite Sites</h2>
+                <div class="row">
+                    <div class="col-lg-4 col-md-6 col-sm-12 mb-3">
+                        <div class="grid-box">
+                            <a href="https://www.youtube.com" class="link-in-box">YouTube</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12 mb-3">
+                        <div class="grid-box">
+                            <a href="https://www.instagram.com/igiiaw/" class="link-in-box">Instagram</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-12 col-sm-12 mb-3">
+                        <div class="grid-box">
+                            <a href="https://www.faceit.com/ru/players/igiiaw/stats/cs2" class="link-in-box">FACEIT</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!--task 3-->
+            <section id="portfolio">
+                <div class="row">
+                    <!--left-->
+                    <div class="col-lg-8 col-md-7 col-sm-12 mb-4">
+                        <h2 class="section-title mb-4">My Projects</h2>
+                        <div class="row g-4">
+                            <div class="col-lg-6 col-md-6 col-sm-12">
+                                <div class="card project-card">
+                                    <div class="card-body">
+                                        <h5 class="card-title">WEB</h5>
+                                        <p class="card-text">Thematic website about Spider-Man.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-sm-12">
+                                <div class="card project-card">
+                                    <div class="card-body">
+                                        <h5 class="card-title">DAA</h5>
+                                        <p class="card-text">Sorting in Java.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-sm-12">
+                                <div class="card project-card">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Finance</h5>
+                                        <p class="card-text">Basic financial information.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--sidebar-->
+                    <div class="col-lg-4 col-md-5 col-sm-12">
+                        <aside class="sidebar p-3">
+                            <h3>About Me</h3>
+                            <p>Name: Amantay Zhan</p>
+                            <p>I'm 18 years old. I like to play video games and go to the gym.</p>
+                            <h4>Contact</h4>
+                            <ul class="list-unstyled">
+                                <li>Email: <a href="#" class="text-white">777@mail.com</a></li>
+                                <li>Phone: +7 (777) 777 7777</li>
+                            </ul>
+                        </aside>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class="text-center py-3 bg-dark-custom">
+            <p class="mb-0">© 2025 MyPortfolio</p>
+            </footer>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    </body>
+</html>

@@ -1,0 +1,83 @@
+body {
+  background-color: rgb(28, 27, 40);
+  color: white;
+  font-family: 'Rubik', sans-serif;
+  margin: 0;
+}
+header {
+  background-color: rgb(127, 1, 1);
+}
+/*part 1*/
+h1, h2 {
+  color: white;
+}
+a {
+    color: white;
+    text-decoration: none;
+}
+a:hover {
+    color: aliceblue;
+    transition: 1s;
+    text-decoration: underline;
+}
+/*responsive text*/
+@media (max-width: 600px) {
+  h1 { font-size: 1.8rem; }
+  p { font-size: 0.9rem; }
+}
+@media (min-width: 601px) and (max-width: 992px) {
+  h1 { font-size: 2.2rem; }
+  p { font-size: 1rem; }
+}
+@media (min-width: 993px) {
+  h1 { font-size: 2.6rem; }
+  p { font-size: 1.1rem; }
+}
+/*responsive box*/
+.boxes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+}
+.box {
+  background-color: rgb(127, 1, 1);
+  flex: 1 1 30%;
+  padding: 30px;
+  min-width: 200px;
+  border-radius: 10px;
+}
+/*tablet*/
+@media (max-width: 992px) {
+  .box { flex: 1 1 45%; }
+}
+/*mobile*/
+@media (max-width: 600px) {
+  .box { flex: 1 1 90%; }
+}
+/*part 2*/
+.grid-box {
+  background-color: rgb(127, 1, 1);
+  color: white;
+  padding: 30px;
+  border-radius: 10px;
+}
+/*part 3*/
+.card {
+  background-color: rgb(40, 39, 55);
+  border: 1px solid rgb(127, 1, 1);
+  color: white;
+  border-radius: 12px;
+}
+.sidebar {
+  background-color: rgb(40, 39, 55);
+  border: 1px solid rgb(127, 1, 1);
+  border-radius: 12px;
+}
+footer {
+  background-color: rgb(127, 1, 1);
+  color: white;
+  width: 100%;
+  bottom: 0;
+  position: relative;
+}
