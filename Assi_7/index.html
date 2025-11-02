@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Assignment #7 - jQuery Selectors, Effects, Animations</title>
+        <link rel="stylesheet" href="styles.css">
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    </head>
+    <body>
+        <div class="container">
+            <header>
+                <h1>Assignment #7 - jQuery Demonstration</h1>
+            </header>
+            <!-- PART 1: Selectors & CSS -->
+            <section class="part">
+                <h2>Part 1: Selectors & CSS</h2>
+                <div class="demo-box">
+                    <p id="demo-id">This paragraph has an ID selector</p>
+                    <p class="demo-class">This paragraph has a class selector</p>
+                    <p>Basic paragraph</p>
+                
+                    <button id="btn-change-text">Change Text</button>
+                    <button id="btn-change-html">Change HTML</button>
+                    <button id="btn-change-css">Change CSS Style</button>
+                </div>
+            </section>
+            <!-- PART 2: jQuery Effects -->
+            <section class="part">
+                <h2>Part 2: jQuery Effects</h2>
+                <!-- Visibility Methods -->
+                <div class="demo-box">
+                    <h3>Visibility Methods</h3>
+                    <p id="visibility-text">Text</p>
+                    <button id="btn-hide">Hide</button>
+                    <button id="btn-show">Show</button>
+                    <button id="btn-toggle">Toggle</button>
+                </div>
+                <!-- Fade Methods -->
+                <div class="demo-box">
+                    <h3>Fade Methods</h3>
+                    <img id="fade-image" src="img2.jpg" alt="Sample">
+                    <div>
+                        <button id="btn-fadein">Fade In</button>
+                        <button id="btn-fadeout">Fade Out</button>
+                        <button id="btn-fadetoggle">Fade Toggle</button>
+                    </div>
+                </div>
+                <!-- Slide Methods -->
+                <div class="demo-box">
+                    <h3>Slide Methods</h3>
+                    <button id="btn-slide-toggle">Toggle Panel</button>
+                    <div id="slide-panel">
+                        <p>Collapsible panel</p>
+                        <p>Slides up and down</p>
+                    </div>
+                </div>
+            </section>
+            <!-- PART 3: DOM Manipulation -->
+            <section class="part">
+                <h2>Part 3: DOM Manipulation</h2>
+                <!-- Add & Remove Elements -->
+                <div class="demo-box">
+                    <h3>Add & Remove Elements</h3>
+                    <ul id="item-list">
+                        <li>Item 1</li>
+                        <li>Item 2</li>
+                    </ul>
+                    <button id="btn-add-item">Add Item</button>
+                    <button id="btn-prepend-item">Prepend Item</button>
+                    <button id="btn-remove-item">Remove Last Item</button>
+                </div>
+                <!-- Modifying Attributes -->
+                <div class="demo-box">
+                    <h3>Modifying Attributes</h3>
+                    <img id="attr-image" src="img3.jpg" alt="Image">
+                    <button id="btn-change-image">Change Image</button>
+                    <br><br>
+                    <a id="attr-link" href="https://www.faceit.com/ru/players/igiiaw/stats/cs2" target="_blank">FACEIT</a>
+                    <button id="btn-change-link">Change Link</button>
+                </div>
+                <!-- Form Interaction -->
+                <div class="demo-box">
+                    <h3>Form Interaction</h3>
+                    <form id="demo-form">
+                        <label for="input-name">Name:</label>
+                        <input type="text" id="input-name" placeholder="Enter your name">
+                        <br>
+                        <label for="input-email">Email:</label>
+                        <input type="email" id="input-email" placeholder="Enter your email">
+                    </form>
+                    <div id="form-output">
+                        <p><strong>Name:</strong> <span id="output-name"></span></p>
+                        <p><strong>Email:</strong> <span id="output-email"></span></p>
+                    </div>
+                </div>
+            </section>
+            <!-- PART 4: Animations -->
+            <section class="part">
+                <h2>Part 4: Animations</h2>
+                <!-- Basic Animation -->
+                <div class="demo-box">
+                    <h3>Basic Animation</h3>
+                    <div id="anim-box" class="animated-box"></div>
+                    <button id="btn-basic-anim">Play</button>
+                </div>
+                <!-- Sequential Animations -->
+                <div class="demo-box">
+                    <h3>Sequential Animations</h3>
+                    <div id="seq-box" class="animated-box"></div>
+                    <button id="btn-seq-anim">Play</button>
+                </div>
+                <!-- Combined Animation -->
+                <div class="demo-box">
+                    <h3>Combined Animation</h3>
+                    <div id="combined-box" class="animated-box"></div>
+                    <button id="btn-combined-anim">Play</button>
+                </div>
+            </section>
+            <!-- PART 5: Mini Project - Image Gallery -->
+            <section class="part">
+                <h2>Part 5: Mini Project - Image Gallery</h2>
+                <div class="demo-box">
+                    <div class="gallery">
+                        <img class="thumbnail" src="card-1-img.jpg" alt="Photo 1">
+                        <img class="thumbnail" src="card-2-img.jpg" alt="Photo 2">
+                        <img class="thumbnail" src="card-3-img.jpg" alt="Photo 3">
+                        <img class="thumbnail" src="img1.jpg" alt="Photo 4">
+                    </div>
+                    <div id="gallery-display"></div>
+                </div>
+            </section>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>
